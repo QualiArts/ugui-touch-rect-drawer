@@ -37,6 +37,22 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.inputsystem": {
+      "version": "1.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.recorder": {
+      "version": "2.4.0-preview.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.timeline": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.test-framework": {
       "version": "1.1.16",
       "depth": 0,
@@ -73,8 +89,8 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
-    "ugui-raycast-drawer": {
-      "version": "file:ugui-raycast-drawer",
+    "ugui-touch-rect-drawer": {
+      "version": "file:ugui-touch-rect-drawer",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}

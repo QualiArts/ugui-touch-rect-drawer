@@ -1,0 +1,9 @@
+{
+  "name": "ugui-touch-rect-drawer",
+  "version": "1.0.0",
+  "displayName": "uGUI Touch Rect Drawer",
+  "description": "uGUI Touch Rect Drawer",
+  "unity": "2019.2",
+  "keywords": [],
+  "type": "library"
+}
