@@ -1,3 +1,4 @@
+![](Documents/top400.gif)
 # Install
 
 dependenciesに追加します。
@@ -6,7 +7,7 @@ dependenciesに追加します。
 {
   "dependencies": {
     ...,
-    "ugui-touch-rect-drawer": "https://github.com/QualiArts/quaunity-ugui-touch-rect-drawer.git?path=Packages/ugui-touch-rect-drawer",
+    "ugui-touch-rect-drawer": "https://github.com/satanabe1/ugui-touch-rect-drawer.git?path=Packages/ugui-touch-rect-drawer",
   }
 }
 ```
