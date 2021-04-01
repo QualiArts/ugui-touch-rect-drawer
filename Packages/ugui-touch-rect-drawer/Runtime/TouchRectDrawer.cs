@@ -121,6 +121,7 @@ namespace UGUIRaycastDrawer
             var cam = canvas.worldCamera;
             for (var i = 0; i < worldCorners.Length; i++)
             {
+                if (target.canvas == null) continue;
                 var targetCam = target.canvas.worldCamera;
                 var start = RectTransformUtility.WorldToScreenPoint(
                     targetCam, worldCorners[i]);
