@@ -6,6 +6,7 @@ using UnityEngine.UI;
 namespace UGUIRaycastDrawer
 {
     [RequireComponent(typeof(CanvasRenderer))]
+    [DefaultExecutionOrder(-1001)] // EventSystemの直前
     public class TouchResultDrawer : MaskableGraphic
     {
         private static readonly UIVertex[] Vertices = new UIVertex[4];

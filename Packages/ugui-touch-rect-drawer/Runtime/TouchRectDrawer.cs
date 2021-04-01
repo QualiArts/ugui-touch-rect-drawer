@@ -149,7 +149,7 @@ namespace UGUIRaycastDrawer
         {
             if (raycaster == null) return;
             if (raycaster.TryGetComponent<Canvas>(out var cav) == false) return;
-            var graphics = GraphicRegistry.GetGraphicsForCanvas(cav);
+            var graphics = GraphicRegistry.GetRaycastableGraphicsForCanvas(cav);
             var eventCamera = cav.worldCamera;
             var hasCamera = eventCamera != null;
             var farClip = hasCamera ? eventCamera.farClipPlane : 0f;
