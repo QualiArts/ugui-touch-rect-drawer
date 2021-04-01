@@ -14,7 +14,7 @@ namespace UGUIRaycastDrawer
         /// <summary>
         /// raycastallする時のtmp list
         /// </summary>
-        private static readonly List<RaycastResult> _tmpHits = new List<RaycastResult>();
+        private static readonly List<RaycastResult> TmpHits = new List<RaycastResult>();
 
         /// <summary>
         /// 各タッチ判定で、一番に触れたもののlist
@@ -80,16 +80,16 @@ namespace UGUIRaycastDrawer
             {
                 _pointer.Reset();
                 _pointer.position = touchPositions[i];
-                _tmpHits.Clear();
-                currentSystem.RaycastAll(_pointer, _tmpHits);
-                if (_tmpHits.Count > 0)
+                TmpHits.Clear();
+                currentSystem.RaycastAll(_pointer, TmpHits);
+                if (TmpHits.Count > 0)
                 {
                     // RaycastAllはソート済みなので先頭決め打ちで問題ないはず
-                    _firstHits.Add(_tmpHits[0]);
+                    _firstHits.Add(TmpHits[0]);
                 }
             }
 
-            _tmpHits.Clear();
+            TmpHits.Clear();
         }
 
         private void Update()
